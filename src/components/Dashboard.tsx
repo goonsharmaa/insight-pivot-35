@@ -63,7 +63,6 @@ const Dashboard = ({ onBack }: DashboardProps) => {
             </div>
             <Button 
               onClick={() => setUploadDialogOpen(true)}
-              className="bg-[var(--gradient-primary)] hover:opacity-90"
             >
               <Upload className="w-4 h-4 mr-2" />
               Upload Feedback

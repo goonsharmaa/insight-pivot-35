@@ -93,8 +93,7 @@ const Hero = ({ onGetStarted }: HeroProps) => {
           <div className="flex gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
             <Button 
               onClick={onGetStarted}
-              size="lg" 
-              className="bg-[var(--gradient-primary)] hover:opacity-90 shadow-elegant"
+              size="lg"
             >
               Try Demo <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -155,7 +154,7 @@ const Hero = ({ onGetStarted }: HeroProps) => {
               value={demoInput}
               onChange={(e) => setDemoInput(e.target.value)}
             />
-            <Button onClick={handleDemo} className="w-full">
+            <Button onClick={handleDemo} className="w-full" size="lg">
               <Zap className="mr-2 w-4 h-4" />
               Analyze Feedback
             </Button>
@@ -210,7 +209,7 @@ const Hero = ({ onGetStarted }: HeroProps) => {
           </div>
           
           <div className="text-center mt-8">
-            <Button onClick={onGetStarted} size="lg" className="bg-[var(--gradient-primary)]">
+            <Button onClick={onGetStarted} size="lg">
               <BarChart3 className="mr-2 w-5 h-5" />
               Generate Insights
             </Button>
